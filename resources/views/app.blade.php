@@ -27,7 +27,6 @@
 
 <body>
   @inertia
-  <script src="/js/index.min.js"></script>
   <script src="/js/vendors.js"></script>
 </body>
 

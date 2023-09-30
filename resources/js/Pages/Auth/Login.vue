@@ -1,161 +1,156 @@
 
 <template>
   <main>
-    <header class="header  js-header" data-x="header" data-x-toggle="is-menu-opened">
-      <div data-anim="fade" class="header__container container">
-        <div class="row justify-between items-center">
+    <TheHeader />
+    <TheContentSearch />
+    <TheSpecialOrder />
+    <ThePopularTour />
+    <TourCategories />
+    <section class="section-bg layout-pt-lg layout-pb-lg bg-light-2">
+      <div class="section-bg__item col-12">
+        <img src="img/backgrounds/testimonials/bg-2.svg" alt="image">
+      </div>
 
+      <div data-anim-wrap class="container">
+        <div data-anim-child="slide-up delay-1" class="row justify-center text-center">
           <div class="col-auto">
-            <div class="d-flex items-center">
-              <a href="index.html" class="header-logo mr-20" data-x="header-logo" data-x-toggle="is-logo-dark">
-                <img src="/img/general/logo.svg" alt="logo icon">
-                <span class="text-white">Madura Indah Wisata</span>
-              </a>
+            <div class="sectionTitle -md">
+              <h2 class="sectionTitle__title">Testimonials</h2>
+              <p class=" sectionTitle__text mt-5 sm:mt-0">Interdum et malesuada fames ac ante ipsum</p>
             </div>
           </div>
-
-
-          <div class="col-auto">
-            <div class="d-flex items-center">
-
-              <div class="header-menu " data-x="mobile-menu" data-x-toggle="is-menu-active">
-                <div class="mobile-overlay"></div>
-
-                <div class="header-menu__content">
-                  <div class="mobile-bg js-mobile-bg"></div>
-
-                  <div class="menu js-navList">
-                    <ul class="menu__nav text-white -is-active">
-
-                      <li class="menu-item-has-children">
-                        <a data-barba href="#">
-                          <span class="mr-10">Home</span>
-                          <i class="icon icon-chevron-sm-down"></i>
-                        </a>
-
-                        <ul class="subnav">
-                          <li class="subnav__backBtn js-nav-list-back">
-                            <a href="#"><i class="icon icon-chevron-sm-down"></i> Home</a>
-                          </li>
-
-                          <li><a href="index.html">Home 1</a></li>
-
-                          <li><a href="home-2.html">Home 2</a></li>
-
-                          <li><a href="home-3.html">Home 3</a></li>
-
-                          <li><a href="home-4.html">Home 4</a></li>
-
-                          <li><a href="home-5.html">Home 5</a></li>
-
-                          <li><a href="home-6.html">Home 6</a></li>
-
-                          <li><a href="home-7.html">Home 7</a></li>
-
-                          <li><a href="home-8.html">Home 8</a></li>
-
-                          <li><a href="home-9.html">Home 9</a></li>
-
-                          <li><a href="home-10.html">Home 10</a></li>
-
-                        </ul>
-
-                      </li>
-                    </ul>
-                  </div>
-
-                  <div class="mobile-footer px-20 py-20 border-top-light js-mobile-footer">
-                  </div>
-                </div>
-              </div>
-
-
-              <div class="d-flex items-center ml-20 is-menu-opened-hide md:d-none">
-                <a href="login.html" class="button px-30 fw-400 text-14 -blue-1 bg-white h-50 text-dark-1">Registrasi Wisata Baru</a>
-                <a href="signup.html" class="button px-30 fw-400 text-14 border-white -blue-1 h-50 text-white ml-20">Sign
-                  In / Sign Up</a>
-              </div>
-
-              <div class="d-none xl:d-flex x-gap-20 items-center pl-30 text-white" data-x="header-mobile-icons"
-                data-x-toggle="text-white">
-                <div><a href="login.html" class="d-flex items-center icon-user text-inherit text-22"></a></div>
-                <div><button class="d-flex items-center icon-menu text-inherit text-20"
-                    data-x-click="html, header, header-logo, header-mobile-icons, mobile-menu"></button></div>
-              </div>
-            </div>
-          </div>
-
         </div>
-      </div>
-    </header>
 
-    <section data-anim-wrap class="masthead -type-6">
-      <div data-anim-child="fade" class="masthead__bg bg-dark-3">
-        <img src="img/general/home-2.jpg" alt="image">
-      </div>
+        <div data-anim-child="slide-up delay-2" class="row justify-center pt-50 md:pt-30">
+          <div class="col-xl-7 col-lg-10">
+            <div class="overflow-hidden js-testimonials-slider">
+              <div class="swiper-wrapper">
 
-      <div class="container">
-        <div class="row justify-center">
-          <div class="col-xl-9">
-            <div class="text-center">
-              <h1 data-anim-child="slide-up delay-4" class="text-60 lg:text-40 md:text-30 text-white">
-                Madura Indah Wisata Travel & Tour
-              </h1>
-              <p data-anim-child="slide-up delay-5" class="text-white mt-5">
-                Temukan tempat menakjubkan dengan penawaran eksklusif
-              </p>
-            </div>
+                <div class="swiper-slide">
+                  <div class="testimonials -type-2 text-center">
+                    <div class="mb-40">
+                      <img src="img/misc/quote.svg" alt="quote">
+                    </div>
 
-            <div data-anim-child="slide-up delay-6"
-              class="mainSearch -w-950 bg-white px-10 py-10 lg:px-20 lg:pt-5 lg:pb-20 rounded-100 mt-40">
-              <div class="button-grid items-center">
+                    <div class="text-22 md:text-18 fw-600 text-dark-1">
+                      "Our family was traveling via bullet train between cities in Japan with our luggage - the location
+                      for this hotel made that so easy. Agoda price was fantastic."
+                    </div>
 
-                <div class="searchMenu-loc px-30 lg:py-20 lg:px-0 js-form-dd js-liverSearch">
-
-                  <div data-x-dd-click="searchMenu-loc">
-                    <h4 class="text-15 fw-500 ls-2 lh-16">Lokasi</h4>
-
-                    <div class="text-15 text-light-1 ls-2 lh-16">
-                      <input autocomplete="off" type="search" placeholder="Kemana Anda Pergi?"
-                        class="js-search js-dd-focus" />
+                    <div class="mt-40">
+                      <h5 class="text-17 lh-15 fw-500">Ali Tufan</h5>
+                      <div class="">Product Manager, Apple Inc</div>
                     </div>
                   </div>
                 </div>
 
+                <div class="swiper-slide">
+                  <div class="testimonials -type-2 text-center">
+                    <div class="mb-40">
+                      <img src="img/misc/quote.svg" alt="quote">
+                    </div>
 
-                <div class="searchMenu-date px-30 lg:py-20 lg:px-0 js-form-dd js-calendar">
+                    <div class="text-22 md:text-18 fw-600 text-dark-1">
+                      "Our family was traveling via bullet train between cities in Japan with our luggage - the location
+                      for this hotel made that so easy. Agoda price was fantastic."
+                    </div>
 
-                  <div data-x-dd-click="searchMenu-date">
-                    <h4 class="text-15 fw-500 ls-2 lh-16">Tanggal Destinasi</h4>
-
-                    <div class="text-15 text-light-1 ls-2 lh-16">
-                      <span class="js-first-date">Rabu 9 Apr</span>
-                      -
-                      <span class="js-last-date">Kamis 10 Apr</span>
+                    <div class="mt-40">
+                      <h5 class="text-17 lh-15 fw-500">Ali Tufan</h5>
+                      <div class="">Product Manager, Apple Inc</div>
                     </div>
                   </div>
                 </div>
 
+                <div class="swiper-slide">
+                  <div class="testimonials -type-2 text-center">
+                    <div class="mb-40">
+                      <img src="img/misc/quote.svg" alt="quote">
+                    </div>
 
-                <div class="searchMenu-guests px-30 lg:py-20 lg:px-0 js-form-dd js-form-counters">
+                    <div class="text-22 md:text-18 fw-600 text-dark-1">
+                      "Our family was traveling via bullet train between cities in Japan with our luggage - the location
+                      for this hotel made that so easy. Agoda price was fantastic."
+                    </div>
 
-                  <div data-x-dd-click="searchMenu-guests">
-                    <h4 class="text-15 fw-500 ls-2 lh-16">Pengunjung</h4>
-
-                    <div class="text-15 text-light-1 ls-2 lh-16">
-                      <span class="js-count-adult">2</span> Dewasa
-                      -
-                      <span class="js-count-child">1</span> Anak - Anak
+                    <div class="mt-40">
+                      <h5 class="text-17 lh-15 fw-500">Ali Tufan</h5>
+                      <div class="">Product Manager, Apple Inc</div>
                     </div>
                   </div>
                 </div>
 
+                <div class="swiper-slide">
+                  <div class="testimonials -type-2 text-center">
+                    <div class="mb-40">
+                      <img src="img/misc/quote.svg" alt="quote">
+                    </div>
 
-                <div class="button-item">
-                  <button class="mainSearch__submit button -dark-1 py-15 px-40 col-12 rounded-100 bg-blue-1 text-white">
-                    <i class="icon-search text-20 mr-10"></i>
-                    Cari
-                  </button>
+                    <div class="text-22 md:text-18 fw-600 text-dark-1">
+                      "Our family was traveling via bullet train between cities in Japan with our luggage - the location
+                      for this hotel made that so easy. Agoda price was fantastic."
+                    </div>
+
+                    <div class="mt-40">
+                      <h5 class="text-17 lh-15 fw-500">Ali Tufan</h5>
+                      <div class="">Product Manager, Apple Inc</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="testimonials -type-2 text-center">
+                    <div class="mb-40">
+                      <img src="img/misc/quote.svg" alt="quote">
+                    </div>
+
+                    <div class="text-22 md:text-18 fw-600 text-dark-1">
+                      "Our family was traveling via bullet train between cities in Japan with our luggage - the location
+                      for this hotel made that so easy. Agoda price was fantastic."
+                    </div>
+
+                    <div class="mt-40">
+                      <h5 class="text-17 lh-15 fw-500">Ali Tufan</h5>
+                      <div class="">Product Manager, Apple Inc</div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="pt-60 lg:pt-40">
+                <div class="pagination -avatars row x-gap-40 y-gap-20 justify-center js-testimonials-pagination">
+
+                  <div class="col-auto">
+                    <div class="pagination__item is-active">
+                      <img src="img/avatars/testimonials/1.png" alt="image">
+                    </div>
+                  </div>
+
+                  <div class="col-auto">
+                    <div class="pagination__item ">
+                      <img src="img/avatars/testimonials/2.png" alt="image">
+                    </div>
+                  </div>
+
+                  <div class="col-auto">
+                    <div class="pagination__item ">
+                      <img src="img/avatars/testimonials/3.png" alt="image">
+                    </div>
+                  </div>
+
+                  <div class="col-auto">
+                    <div class="pagination__item ">
+                      <img src="img/avatars/testimonials/4.png" alt="image">
+                    </div>
+                  </div>
+
+                  <div class="col-auto">
+                    <div class="pagination__item ">
+                      <img src="img/avatars/testimonials/5.png" alt="image">
+                    </div>
+                  </div>
+
                 </div>
               </div>
             </div>
@@ -163,72 +158,45 @@
         </div>
       </div>
     </section>
-
-
-
+    <TheFooter />
   </main>
 </template>
 <script lang="ts">
-declare const ScrollMagic: any;
-declare const window: any;
+
+declare const LazyLoad: any;
 </script>
 
 <script setup lang="ts">
-import { ref, onMounted } from 'vue';
+import TheHeader from '../../Components/TheHeader.vue';
+import TheContentSearch from '../../Components/TheContentSearch.vue';
+import TheSpecialOrder from '../../Components/TheSpecialOrder.vue';
+import ThePopularTour from '../../Components/ThePopularTour.vue';
+import TourCategories from '../../Components/TourCategories.vue';
+import TheFooter from '../../Components/TheFooter.vue';
+import {
+  animInit,
+  container,
+  header,
+  isInView,
+  sectionSlider,
+  animateElement
+} from '../../Helpers/main';
+import { onMounted } from 'vue';
 
 onMounted(() => {
+  document.title = 'Madura Indah Wisata Travel & Tour';
   animInit();
   const anim = document.querySelectorAll('[data-anim]');
   anim.forEach((el: any) => isInView(el));
   const animChilds: any = document.querySelectorAll('[data-anim-child]');
   animChilds.forEach((el: any) => animateElement(el));
   header();
-});
-function animInit() {
-  const elementsToAnimate = document.querySelectorAll('[data-anim-child="fade"]');
-  elementsToAnimate.forEach(function (element: any) {
-    element.style.opacity = '0';
-    element.style.transition = 'opacity 1s';
-    setTimeout(function () {
-      element.style.opacity = '1';
-    }, 100);
+  new LazyLoad({
+    elements_selector: '.js-lazy'
   });
-}
+  container();
+  sectionSlider();
+});
 
-
-function animateElement(target: any) {
-  let attrVal: any;
-  let animDelay: any;
-  let attrDelayPart: any;
-
-  if (target.getAttribute('data-anim')) {
-    attrVal = target.getAttribute('data-anim');
-  } else {
-    attrVal = target.getAttribute('data-anim-child');
-    target.classList.add('is-in-view');
-  }
-  target.classList.add('animated');
-  if (attrVal.includes('delay-')) {
-    attrDelayPart = attrVal.split(' ').pop();
-    animDelay = attrDelayPart.substr(attrDelayPart.indexOf('-') + 1) / 10;
-    setTimeout;
-  }
-}
-
-function header() {
-  const header = document.querySelector('.js-header');
-  if (!header) return;
-
-  new ScrollMagic.Scene({
-    offset: '6px'
-  })
-    .setClassToggle(header, 'is-sticky')
-    .setClassToggle(header, 'bg-dark-1')
-    .addTo(new ScrollMagic.Controller());
-}
-
-function isInView(el: any) {
-  el.classList.add('is-in-view');
-}
 
 </script>

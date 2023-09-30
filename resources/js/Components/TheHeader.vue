@@ -59,6 +59,16 @@
                       </ul>
 
                     </li>
+                    <li class="menu-item-has-children">
+                      <a data-barba href="#">
+                        <span class="mr-10">About</span>
+                      </a>
+                    </li>
+                    <li class="menu-item-has-children">
+                      <a data-barba href="#">
+                        <span class="mr-10">Destinasi</span>
+                      </a>
+                    </li>
                   </ul>
                 </div>
 

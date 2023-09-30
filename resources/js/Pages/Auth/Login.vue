@@ -158,11 +158,41 @@
         </div>
       </div>
     </section>
+    <section class="layout-pt-md layout-pb-lg">
+      <div class="container">
+        <div class="row y-gap-30 items-center justify-between">
+          <div class="col-xl-6">
+            <img src="img/app/2.svg" alt="image">
+          </div>
+
+          <div class="col-xl-5">
+            <h2 class="text-30 lh-15">Madura Indah Wisata</h2>
+            <p class="text-dark-1 pr-40 lg:pr-0 mt-15 sm:mt-5">Anda dapat melakukan pemesanan tiket untuk keluarga dengan
+              sangat mudah. Nikmati perjalanan anda bersama kami.</p>
+
+            <div class="row items-center pt-30 sm:pt-10">
+              <div class="col-auto">
+                <div
+                  class="d-flex items-center px-20 py-10 rounded-8 border-white-15 text-white bg-dark-3 justify-content-center ">
+                  <div class="text-14">Order Tiket Anda Sekarang !</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <a href="https://wa.me/6281228430523?text=Hi%20Qiscus" class="floating" target="_blank">
+        <i class="fab fa-whatsapp fab-icon"></i>
+      </a>
+    </section>
+
     <TheFooter />
   </main>
 </template>
 <script lang="ts">
-
+declare const Swiper: any;
 declare const LazyLoad: any;
 </script>
 
@@ -196,7 +226,58 @@ onMounted(() => {
   });
   container();
   sectionSlider();
+  testimonialsSlider();
 });
 
+function testimonialsSlider() {
+  const slider = new Swiper('.js-testimonials-slider', {
+    speed: 700,
+    loop: true,
+    lazy: {
+      loadPrevNext: true,
+    },
+  });
+
+  const paginationItems = document.querySelectorAll('.js-testimonials-slider .js-testimonials-pagination > * > *');
+
+  paginationItems.forEach((el, i) => {
+    el.addEventListener('click', () => {
+      document.querySelector('.js-testimonials-slider .js-testimonials-pagination .is-active')?.classList.remove('is-active');
+      el.classList.add('is-active');
+      slider.slideTo(i + 1);
+    });
+  });
+
+  slider.on('slideChangeTransitionEnd', () => {
+    document.querySelector('.js-testimonials-slider .js-testimonials-pagination .is-active')?.classList.remove('is-active');
+    paginationItems[slider.realIndex].classList.add('is-active');
+  });
+}
 
 </script>
+
+<style>
+.floating {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  background-color: #25d366;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 100;
+}
+
+.floating:hover {
+  color: #fff;
+  background-color: #128c7e;
+}
+
+.fab-icon {
+  margin-top: 16px;
+}
+</style>

@@ -2,194 +2,178 @@
   <main>
     <div class="header-margin"></div>
     <TheHeader />
-    <section class="layout-pt-md layout-pb-lg">
+    <section class="pt-40 pb-40 bg-light-2">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="text-center">
+              <h1 class="text-30 fw-600">Find Your Dream Luxury Hotel</h1>
+            </div>
+
+            <div class="mainSearch -col-3-big bg-white px-10 py-10 lg:px-20 lg:pt-5 lg:pb-20 rounded-4 mt-30">
+              <div class="button-grid items-center">
+
+                <div class="searchMenu-loc pl-20 lg:py-20 lg:px-0 js-form-dd js-liverSearch">
+
+                  <div data-x-dd-click="searchMenu-loc">
+                    <h4 class="text-15 fw-500 ls-2 lh-16">Location</h4>
+
+                    <div class="text-15 text-light-1 ls-2 lh-16">
+                      <input autocomplete="off" type="search" placeholder="London" class="js-search js-dd-focus">
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="searchMenu-date px-30 lg:py-20 lg:px-0 js-form-dd js-calendar">
+
+                  <div data-x-dd-click="searchMenu-date">
+                    <h4 class="text-15 fw-500 ls-2 lh-16">Check in - Check out</h4>
+
+                    <div class="text-15 text-light-1 ls-2 lh-16">
+                      <span class="js-first-date">Wed 2 Mar</span>
+
+                      <span class="js-last-date">Fri 11 Apr</span>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="searchMenu-guests px-30 lg:py-20 lg:px-0 js-form-dd js-form-counters">
+
+                  <div data-x-dd-click="searchMenu-guests">
+                    <h4 class="text-15 fw-500 ls-2 lh-16">Guest</h4>
+
+                    <div class="text-15 text-light-1 ls-2 lh-16">
+                      <span class="js-count-adult">2</span> adults
+                      -
+                      <span class="js-count-child">1</span> childeren
+                      -
+                      <span class="js-count-room">1</span> room
+                    </div>
+                  </div>
+
+
+                  <div class="searchMenu-guests__field shadow-2" data-x-dd="searchMenu-guests"
+                    data-x-dd-toggle="-is-active">
+                    <div class="bg-white px-30 py-30 rounded-4">
+                      <div class="row y-gap-10 justify-between items-center">
+                        <div class="col-auto">
+                          <div class="text-15 fw-500">Adults</div>
+                        </div>
+
+                        <div class="col-auto">
+                          <div class="d-flex items-center js-counter" data-value-change=".js-count-adult">
+                            <button class="button -outline-blue-1 text-blue-1 size-38 rounded-4 js-down">
+                              <i class="icon-minus text-12"></i>
+                            </button>
+
+                            <div class="flex-center size-20 ml-15 mr-15">
+                              <div class="text-15 js-count">2</div>
+                            </div>
+
+                            <button class="button -outline-blue-1 text-blue-1 size-38 rounded-4 js-up">
+                              <i class="icon-plus text-12"></i>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="border-top-light mt-24 mb-24"></div>
+
+                      <div class="row y-gap-10 justify-between items-center">
+                        <div class="col-auto">
+                          <div class="text-15 lh-12 fw-500">Children</div>
+                          <div class="text-14 lh-12 text-light-1 mt-5">Ages 0 - 17</div>
+                        </div>
+
+                        <div class="col-auto">
+                          <div class="d-flex items-center js-counter" data-value-change=".js-count-child">
+                            <button class="button -outline-blue-1 text-blue-1 size-38 rounded-4 js-down">
+                              <i class="icon-minus text-12"></i>
+                            </button>
+
+                            <div class="flex-center size-20 ml-15 mr-15">
+                              <div class="text-15 js-count">1</div>
+                            </div>
+
+                            <button class="button -outline-blue-1 text-blue-1 size-38 rounded-4 js-up">
+                              <i class="icon-plus text-12"></i>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="border-top-light mt-24 mb-24"></div>
+
+                      <div class="row y-gap-10 justify-between items-center">
+                        <div class="col-auto">
+                          <div class="text-15 fw-500">Rooms</div>
+                        </div>
+
+                        <div class="col-auto">
+                          <div class="d-flex items-center js-counter" data-value-change=".js-count-room">
+                            <button class="button -outline-blue-1 text-blue-1 size-38 rounded-4 js-down">
+                              <i class="icon-minus text-12"></i>
+                            </button>
+
+                            <div class="flex-center size-20 ml-15 mr-15">
+                              <div class="text-15 js-count">1</div>
+                            </div>
+
+                            <button class="button -outline-blue-1 text-blue-1 size-38 rounded-4 js-up">
+                              <i class="icon-plus text-12"></i>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="button-item">
+                  <button class="mainSearch__submit button -dark-1 py-15 px-40 col-12 rounded-4 bg-blue-1 text-white">
+                    <i class="icon-search text-20 mr-10"></i>
+                    Search
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="layout-pt-md layout-pb-lg mt-0 pt-30">
       <div class="container">
         <div class="row y-gap-30">
           <div class="col-xl-3 col-lg-4 lg:d-none">
-            <div class="sidebar__item -no-border mb-3">
-              <h5 class="text-18 fw-500 mb-10">Activity type</h5>
-              <div class="sidebar-checkbox">
+            <ActivityType />
+            <Price />
+            <div class="sidebar__item">
+              <h5 class="text-18 fw-500 mb-10 mt-10">Star Rating</h5>
+              <div class="row x-gap-10 y-gap-10 pt-10">
 
-                <div class="row y-gap-10 items-center justify-between">
-                  <div class="col-auto">
-
-                    <div class="d-flex items-center">
-                      <div class="form-checkbox ">
-                        <input type="checkbox" name="name">
-                        <div class="form-checkbox__mark">
-                          <div class="form-checkbox__icon icon-check"></div>
-                        </div>
-                      </div>
-
-                      <div class="text-15 ml-10">Art and culture</div>
-
-                    </div>
-
-                  </div>
-
-                  <div class="col-auto">
-                    <div class="text-15 text-light-1">92</div>
-                  </div>
+                <div class="col-auto">
+                  <a href="#" class="button -blue-1 bg-blue-1-05 text-blue-1 py-5 px-20 rounded-100">1</a>
                 </div>
 
-                <div class="row y-gap-10 items-center justify-between">
-                  <div class="col-auto">
-
-                    <div class="d-flex items-center">
-                      <div class="form-checkbox ">
-                        <input type="checkbox" name="name">
-                        <div class="form-checkbox__mark">
-                          <div class="form-checkbox__icon icon-check"></div>
-                        </div>
-                      </div>
-
-                      <div class="text-15 ml-10">Food and drink </div>
-
-                    </div>
-
-                  </div>
-
-                  <div class="col-auto">
-                    <div class="text-15 text-light-1">45</div>
-                  </div>
+                <div class="col-auto">
+                  <a href="#" class="button -blue-1 bg-blue-1-05 text-blue-1 py-5 px-20 rounded-100">2</a>
                 </div>
 
-                <div class="row y-gap-10 items-center justify-between">
-                  <div class="col-auto">
-
-                    <div class="d-flex items-center">
-                      <div class="form-checkbox ">
-                        <input type="checkbox" name="name">
-                        <div class="form-checkbox__mark">
-                          <div class="form-checkbox__icon icon-check"></div>
-                        </div>
-                      </div>
-
-                      <div class="text-15 ml-10">Entertainment</div>
-
-                    </div>
-
-                  </div>
-
-                  <div class="col-auto">
-                    <div class="text-15 text-light-1">21</div>
-                  </div>
+                <div class="col-auto">
+                  <a href="#" class="button -blue-1 bg-blue-1-05 text-blue-1 py-5 px-20 rounded-100">3</a>
                 </div>
 
-                <div class="row y-gap-10 items-center justify-between">
-                  <div class="col-auto">
-
-                    <div class="d-flex items-center">
-                      <div class="form-checkbox ">
-                        <input type="checkbox" name="name">
-                        <div class="form-checkbox__mark">
-                          <div class="form-checkbox__icon icon-check"></div>
-                        </div>
-                      </div>
-
-                      <div class="text-15 ml-10">Sports </div>
-
-                    </div>
-
-                  </div>
-
-                  <div class="col-auto">
-                    <div class="text-15 text-light-1">78</div>
-                  </div>
+                <div class="col-auto">
+                  <a href="#" class="button -blue-1 bg-blue-1-05 text-blue-1 py-5 px-20 rounded-100">4</a>
                 </div>
 
-                <div class="row y-gap-10 items-center justify-between">
-                  <div class="col-auto">
-
-                    <div class="d-flex items-center">
-                      <div class="form-checkbox ">
-                        <input type="checkbox" name="name">
-                        <div class="form-checkbox__mark">
-                          <div class="form-checkbox__icon icon-check"></div>
-                        </div>
-                      </div>
-
-                      <div class="text-15 ml-10">Nature and outdoors </div>
-
-                    </div>
-
-                  </div>
-
-                  <div class="col-auto">
-                    <div class="text-15 text-light-1">679</div>
-                  </div>
+                <div class="col-auto">
+                  <a href="#" class="button -blue-1 bg-blue-1-05 text-blue-1 py-5 px-20 rounded-100">5</a>
                 </div>
 
-              </div>
-            </div>
-            <div class="sidebar__item mb-3">
-              <h5 class="text-18 fw-500 mb-10">Other</h5>
-              <div class="sidebar-checkbox">
-
-                <div class="row y-gap-10 items-center justify-between">
-                  <div class="col-auto">
-
-                    <div class="d-flex items-center">
-                      <div class="form-checkbox ">
-                        <input type="checkbox" name="name">
-                        <div class="form-checkbox__mark">
-                          <div class="form-checkbox__icon icon-check"></div>
-                        </div>
-                      </div>
-
-                      <div class="text-15 ml-10">Free cancellation</div>
-
-                    </div>
-
-                  </div>
-
-                  <div class="col-auto">
-                    <div class="text-15 text-light-1">92</div>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-            <div class="sidebar__item pb-30">
-              <h5 class="text-18 fw-500 mb-10">Price</h5>
-              <div class="row x-gap-10 y-gap-30">
-                <div class="col-12">
-                  <div class="js-price-rangeSlider">
-                    <div class="text-14 fw-500"></div>
-
-                    <div class="d-flex justify-between mb-20">
-                      <div class="text-15 text-dark-1">
-                        <span class="js-lower">$0</span>
-                        -
-                        <span class="js-upper">$500</span>
-                      </div>
-                    </div>
-
-                    <div class="px-5">
-                      <div class="js-slider noUi-target noUi-ltr noUi-horizontal noUi-txt-dir-ltr">
-                        <div class="noUi-base">
-                          <div class="noUi-connects">
-                            <div class="noUi-connect" style="transform: translate(0%, 0px) scale(0.25, 1);"></div>
-                          </div>
-                          <div class="noUi-origin" style="transform: translate(-100%, 0px); z-index: 5;">
-                            <div class="noUi-handle noUi-handle-lower" data-handle="0" tabindex="0" role="slider"
-                              aria-orientation="horizontal" aria-valuemin="0.0" aria-valuemax="500.0" aria-valuenow="0.0"
-                              aria-valuetext="$0">
-                              <div class="noUi-touch-area"></div>
-                            </div>
-                          </div>
-                          <div class="noUi-origin" style="transform: translate(-75%, 0px); z-index: 6;">
-                            <div class="noUi-handle noUi-handle-upper" data-handle="1" tabindex="0" role="slider"
-                              aria-orientation="horizontal" aria-valuemin="0.0" aria-valuemax="2000.0"
-                              aria-valuenow="500.0" aria-valuetext="$500">
-                              <div class="noUi-touch-area"></div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
               </div>
             </div>
           </div>
@@ -217,447 +201,6 @@
                   </div>
                 </div>
               </div>
-            </div>
-
-            <div class="filterPopup bg-white" data-x="filterPopup" data-x-toggle="-is-active">
-              <aside class="sidebar -mobile-filter">
-                <div data-x-click="filterPopup" class="-icon-close">
-                  <i class="icon-close"></i>
-                </div>
-
-                <div class="sidebar__item -no-border">
-                  <h5 class="text-18 fw-500 mb-10">Activity type</h5>
-                  <div class="sidebar-checkbox">
-
-                    <div class="row y-gap-10 items-center justify-between">
-                      <div class="col-auto">
-
-                        <div class="d-flex items-center">
-                          <div class="form-checkbox ">
-                            <input type="checkbox" name="name">
-                            <div class="form-checkbox__mark">
-                              <div class="form-checkbox__icon icon-check"></div>
-                            </div>
-                          </div>
-
-                          <div class="text-15 ml-10">Art and culture</div>
-
-                        </div>
-
-                      </div>
-
-                      <div class="col-auto">
-                        <div class="text-15 text-light-1">92</div>
-                      </div>
-                    </div>
-
-                    <div class="row y-gap-10 items-center justify-between">
-                      <div class="col-auto">
-
-                        <div class="d-flex items-center">
-                          <div class="form-checkbox ">
-                            <input type="checkbox" name="name">
-                            <div class="form-checkbox__mark">
-                              <div class="form-checkbox__icon icon-check"></div>
-                            </div>
-                          </div>
-
-                          <div class="text-15 ml-10">Food and drink </div>
-
-                        </div>
-
-                      </div>
-
-                      <div class="col-auto">
-                        <div class="text-15 text-light-1">45</div>
-                      </div>
-                    </div>
-
-                    <div class="row y-gap-10 items-center justify-between">
-                      <div class="col-auto">
-
-                        <div class="d-flex items-center">
-                          <div class="form-checkbox ">
-                            <input type="checkbox" name="name">
-                            <div class="form-checkbox__mark">
-                              <div class="form-checkbox__icon icon-check"></div>
-                            </div>
-                          </div>
-
-                          <div class="text-15 ml-10">Entertainment</div>
-
-                        </div>
-
-                      </div>
-
-                      <div class="col-auto">
-                        <div class="text-15 text-light-1">21</div>
-                      </div>
-                    </div>
-
-                    <div class="row y-gap-10 items-center justify-between">
-                      <div class="col-auto">
-
-                        <div class="d-flex items-center">
-                          <div class="form-checkbox ">
-                            <input type="checkbox" name="name">
-                            <div class="form-checkbox__mark">
-                              <div class="form-checkbox__icon icon-check"></div>
-                            </div>
-                          </div>
-
-                          <div class="text-15 ml-10">Sports </div>
-
-                        </div>
-
-                      </div>
-
-                      <div class="col-auto">
-                        <div class="text-15 text-light-1">78</div>
-                      </div>
-                    </div>
-
-                    <div class="row y-gap-10 items-center justify-between">
-                      <div class="col-auto">
-
-                        <div class="d-flex items-center">
-                          <div class="form-checkbox ">
-                            <input type="checkbox" name="name">
-                            <div class="form-checkbox__mark">
-                              <div class="form-checkbox__icon icon-check"></div>
-                            </div>
-                          </div>
-
-                          <div class="text-15 ml-10">Nature and outdoors </div>
-
-                        </div>
-
-                      </div>
-
-                      <div class="col-auto">
-                        <div class="text-15 text-light-1">679</div>
-                      </div>
-                    </div>
-
-                  </div>
-                </div>
-
-                <div class="sidebar__item mt-10">
-                  <h5 class="text-18 fw-500 mt-10">Otasdher</h5>
-                  <div class="sidebar-checkbox">
-
-                    <div class="row y-gap-10 items-center justify-between">
-                      <div class="col-auto">
-
-                        <div class="d-flex items-center">
-                          <div class="form-checkbox ">
-                            <input type="checkbox" name="name">
-                            <div class="form-checkbox__mark">
-                              <div class="form-checkbox__icon icon-check"></div>
-                            </div>
-                          </div>
-
-                          <div class="text-15 ml-10">Free cancellation</div>
-
-                        </div>
-
-                      </div>
-
-                      <div class="col-auto">
-                        <div class="text-15 text-light-1">92</div>
-                      </div>
-                    </div>
-
-                  </div>
-                </div>
-
-                <div class="sidebar__item pb-30">
-                  <h5 class="text-18 fw-500 mb-10">Price</h5>
-                  <div class="row x-gap-10 y-gap-30">
-                    <div class="col-12">
-                      <div class="js-price-rangeSlider">
-                        <div class="text-14 fw-500"></div>
-
-                        <div class="d-flex justify-between mb-20">
-                          <div class="text-15 text-dark-1">
-                            <span class="js-lower"></span>
-                            -
-                            <span class="js-upper"></span>
-                          </div>
-                        </div>
-
-                        <div class="px-5">
-                          <div class="js-slider"></div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="sidebar__item">
-                  <h5 class="text-18 fw-500 mb-10">Duration</h5>
-                  <div class="sidebar-checkbox">
-
-                    <div class="row y-gap-10 items-center justify-between">
-                      <div class="col-auto">
-
-                        <div class="d-flex items-center">
-                          <div class="form-checkbox ">
-                            <input type="checkbox" name="name">
-                            <div class="form-checkbox__mark">
-                              <div class="form-checkbox__icon icon-check"></div>
-                            </div>
-                          </div>
-
-                          <div class="text-15 ml-10">Up to 1 hour</div>
-
-                        </div>
-
-                      </div>
-
-                      <div class="col-auto">
-                        <div class="text-15 text-light-1">92</div>
-                      </div>
-                    </div>
-
-                    <div class="row y-gap-10 items-center justify-between">
-                      <div class="col-auto">
-
-                        <div class="d-flex items-center">
-                          <div class="form-checkbox ">
-                            <input type="checkbox" name="name">
-                            <div class="form-checkbox__mark">
-                              <div class="form-checkbox__icon icon-check"></div>
-                            </div>
-                          </div>
-
-                          <div class="text-15 ml-10">1 to 4 hours </div>
-
-                        </div>
-
-                      </div>
-
-                      <div class="col-auto">
-                        <div class="text-15 text-light-1">45</div>
-                      </div>
-                    </div>
-
-                    <div class="row y-gap-10 items-center justify-between">
-                      <div class="col-auto">
-
-                        <div class="d-flex items-center">
-                          <div class="form-checkbox ">
-                            <input type="checkbox" name="name">
-                            <div class="form-checkbox__mark">
-                              <div class="form-checkbox__icon icon-check"></div>
-                            </div>
-                          </div>
-
-                          <div class="text-15 ml-10">4 hours to 1 day </div>
-
-                        </div>
-
-                      </div>
-
-                      <div class="col-auto">
-                        <div class="text-15 text-light-1">21</div>
-                      </div>
-                    </div>
-
-                  </div>
-                </div>
-
-                <div class="sidebar__item">
-                  <h5 class="text-18 fw-500 mb-10">Languages</h5>
-                  <div class="sidebar-checkbox">
-
-                    <div class="row y-gap-10 items-center justify-between">
-                      <div class="col-auto">
-
-                        <div class="d-flex items-center">
-                          <div class="form-checkbox ">
-                            <input type="checkbox" name="name">
-                            <div class="form-checkbox__mark">
-                              <div class="form-checkbox__icon icon-check"></div>
-                            </div>
-                          </div>
-
-                          <div class="text-15 ml-10">English</div>
-
-                        </div>
-
-                      </div>
-
-                      <div class="col-auto">
-                        <div class="text-15 text-light-1">92</div>
-                      </div>
-                    </div>
-
-                    <div class="row y-gap-10 items-center justify-between">
-                      <div class="col-auto">
-
-                        <div class="d-flex items-center">
-                          <div class="form-checkbox ">
-                            <input type="checkbox" name="name">
-                            <div class="form-checkbox__mark">
-                              <div class="form-checkbox__icon icon-check"></div>
-                            </div>
-                          </div>
-
-                          <div class="text-15 ml-10">Spanish</div>
-
-                        </div>
-
-                      </div>
-
-                      <div class="col-auto">
-                        <div class="text-15 text-light-1">45</div>
-                      </div>
-                    </div>
-
-                    <div class="row y-gap-10 items-center justify-between">
-                      <div class="col-auto">
-
-                        <div class="d-flex items-center">
-                          <div class="form-checkbox ">
-                            <input type="checkbox" name="name">
-                            <div class="form-checkbox__mark">
-                              <div class="form-checkbox__icon icon-check"></div>
-                            </div>
-                          </div>
-
-                          <div class="text-15 ml-10">French</div>
-
-                        </div>
-
-                      </div>
-
-                      <div class="col-auto">
-                        <div class="text-15 text-light-1">45</div>
-                      </div>
-                    </div>
-
-                    <div class="row y-gap-10 items-center justify-between">
-                      <div class="col-auto">
-
-                        <div class="d-flex items-center">
-                          <div class="form-checkbox ">
-                            <input type="checkbox" name="name">
-                            <div class="form-checkbox__mark">
-                              <div class="form-checkbox__icon icon-check"></div>
-                            </div>
-                          </div>
-
-                          <div class="text-15 ml-10">Turkish</div>
-
-                        </div>
-
-                      </div>
-
-                      <div class="col-auto">
-                        <div class="text-15 text-light-1">21</div>
-                      </div>
-                    </div>
-
-                  </div>
-                </div>
-
-                <div class="sidebar__item">
-                  <h5 class="text-18 fw-500 mb-10">Popular Attractions</h5>
-                  <div class="sidebar-checkbox">
-
-                    <div class="row y-gap-10 items-center justify-between">
-                      <div class="col-auto">
-
-                        <div class="d-flex items-center">
-                          <div class="form-checkbox ">
-                            <input type="checkbox" name="name">
-                            <div class="form-checkbox__mark">
-                              <div class="form-checkbox__icon icon-check"></div>
-                            </div>
-                          </div>
-
-                          <div class="text-15 ml-10">Buckingham Palace</div>
-
-                        </div>
-
-                      </div>
-
-                      <div class="col-auto">
-                        <div class="text-15 text-light-1">92</div>
-                      </div>
-                    </div>
-
-                    <div class="row y-gap-10 items-center justify-between">
-                      <div class="col-auto">
-
-                        <div class="d-flex items-center">
-                          <div class="form-checkbox ">
-                            <input type="checkbox" name="name">
-                            <div class="form-checkbox__mark">
-                              <div class="form-checkbox__icon icon-check"></div>
-                            </div>
-                          </div>
-
-                          <div class="text-15 ml-10">Tourope UK</div>
-
-                        </div>
-
-                      </div>
-
-                      <div class="col-auto">
-                        <div class="text-15 text-light-1">45</div>
-                      </div>
-                    </div>
-
-                    <div class="row y-gap-10 items-center justify-between">
-                      <div class="col-auto">
-
-                        <div class="d-flex items-center">
-                          <div class="form-checkbox ">
-                            <input type="checkbox" name="name">
-                            <div class="form-checkbox__mark">
-                              <div class="form-checkbox__icon icon-check"></div>
-                            </div>
-                          </div>
-
-                          <div class="text-15 ml-10">European Tours Limited</div>
-
-                        </div>
-
-                      </div>
-
-                      <div class="col-auto">
-                        <div class="text-15 text-light-1">21</div>
-                      </div>
-                    </div>
-
-                    <div class="row y-gap-10 items-center justify-between">
-                      <div class="col-auto">
-
-                        <div class="d-flex items-center">
-                          <div class="form-checkbox ">
-                            <input type="checkbox" name="name">
-                            <div class="form-checkbox__mark">
-                              <div class="form-checkbox__icon icon-check"></div>
-                            </div>
-                          </div>
-
-                          <div class="text-15 ml-10">Westminster Abbey</div>
-
-                        </div>
-
-                      </div>
-
-                      <div class="col-auto">
-                        <div class="text-15 text-light-1">78</div>
-                      </div>
-                    </div>
-
-                  </div>
-                </div>
-
-              </aside>
             </div>
 
             <div class="border-top-light mt-30 mb-30"></div>
@@ -725,501 +268,6 @@
                 </a>
 
               </div>
-
-              <div class="col-lg-4 col-sm-6">
-
-                <a href="activity-single.html" class="activityCard -type-1 rounded-4 ">
-                  <div class="activityCard__image">
-
-                    <div class="cardImage ratio ratio-1:1">
-                      <div class="cardImage__content">
-
-
-                        <div class="cardImage-slider rounded-4 overflow-hidden js-cardImage-slider">
-                          <div class="swiper-wrapper">
-
-                            <div class="swiper-slide">
-                              <img class="col-12" src="img/lists/activity/2/2.png" alt="image">
-                            </div>
-
-                            <div class="swiper-slide">
-                              <img class="col-12" src="img/lists/activity/2/3.png" alt="image">
-                            </div>
-
-                            <div class="swiper-slide">
-                              <img class="col-12" src="img/lists/activity/2/4.png" alt="image">
-                            </div>
-
-                            <div class="swiper-slide">
-                              <img class="col-12" src="img/lists/activity/2/1.png" alt="image">
-                            </div>
-
-                          </div>
-
-                          <div class="cardImage-slider__pagination js-pagination"></div>
-
-                          <div class="cardImage-slider__nav -prev">
-                            <button class="button -blue-1 bg-white size-30 rounded-full shadow-2 js-prev">
-                              <i class="icon-chevron-left text-10"></i>
-                            </button>
-                          </div>
-
-                          <div class="cardImage-slider__nav -next">
-                            <button class="button -blue-1 bg-white size-30 rounded-full shadow-2 js-next">
-                              <i class="icon-chevron-right text-10"></i>
-                            </button>
-                          </div>
-                        </div>
-
-                      </div>
-
-                      <div class="cardImage__wishlist">
-                        <button class="button -blue-1 bg-white size-30 rounded-full shadow-2">
-                          <i class="icon-heart text-12"></i>
-                        </button>
-                      </div>
-
-
-                    </div>
-
-                  </div>
-
-                  <div class="activityCard__content mt-10">
-                    <div class="text-14 lh-14 text-light-1 mb-5">6+ hours</div>
-
-                    <h4 class="activityCard__title lh-16 fw-500 text-dark-1 text-18">
-                      <span>Edinburgh Sky to Sea Bike Tour by Manual or E-Bike</span>
-                    </h4>
-
-                    <p class="text-light-1 text-14 lh-14 mt-5">Ciutat Vella, Barcelona</p>
-
-                    <div class="row justify-between items-center pt-10">
-                      <div class="col-auto">
-                        <div class="d-flex items-center">
-                          <div class="icon-star text-yellow-1 text-10 mr-5"></div>
-
-                          <div class="text-14 text-light-1">
-                            <span class="text-15 text-dark-1 fw-500">4.82</span>
-                            94 reviews
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="col-auto">
-                        <div class="text-14 text-light-1">
-                          From <span class="text-16 fw-500 text-dark-1">US$72</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-
-              </div>
-
-              <div class="col-lg-4 col-sm-6">
-
-                <a href="activity-single.html" class="activityCard -type-1 rounded-4 ">
-                  <div class="activityCard__image">
-
-                    <div class="cardImage ratio ratio-1:1">
-                      <div class="cardImage__content">
-
-                        <img class="rounded-4 col-12" src="img/lists/activity/2/3.png" alt="image">
-
-
-                      </div>
-
-                      <div class="cardImage__wishlist">
-                        <button class="button -blue-1 bg-white size-30 rounded-full shadow-2">
-                          <i class="icon-heart text-12"></i>
-                        </button>
-                      </div>
-
-
-                      <div class="cardImage__leftBadge">
-                        <div class="py-5 px-15 rounded-right-4 text-12 lh-16 fw-500 uppercase bg-blue-1 text-white">
-                          Best Seller
-                        </div>
-                      </div>
-
-                    </div>
-
-                  </div>
-
-                  <div class="activityCard__content mt-10">
-                    <div class="text-14 lh-14 text-light-1 mb-5">6+ hours</div>
-
-                    <h4 class="activityCard__title lh-16 fw-500 text-dark-1 text-18">
-                      <span>Natural Crystal Blue Ice Cave Tour of Vatnajökull Glacier</span>
-                    </h4>
-
-                    <p class="text-light-1 text-14 lh-14 mt-5">Manhattan, New York</p>
-
-                    <div class="row justify-between items-center pt-10">
-                      <div class="col-auto">
-                        <div class="d-flex items-center">
-                          <div class="icon-star text-yellow-1 text-10 mr-5"></div>
-
-                          <div class="text-14 text-light-1">
-                            <span class="text-15 text-dark-1 fw-500">4.82</span>
-                            94 reviews
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="col-auto">
-                        <div class="text-14 text-light-1">
-                          From <span class="text-16 fw-500 text-dark-1">US$72</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-
-              </div>
-
-              <div class="col-lg-4 col-sm-6">
-
-                <a href="activity-single.html" class="activityCard -type-1 rounded-4 ">
-                  <div class="activityCard__image">
-
-                    <div class="cardImage ratio ratio-1:1">
-                      <div class="cardImage__content">
-
-                        <img class="rounded-4 col-12" src="img/lists/activity/2/4.png" alt="image">
-
-
-                      </div>
-
-                      <div class="cardImage__wishlist">
-                        <button class="button -blue-1 bg-white size-30 rounded-full shadow-2">
-                          <i class="icon-heart text-12"></i>
-                        </button>
-                      </div>
-
-
-                      <div class="cardImage__leftBadge">
-                        <div class="py-5 px-15 rounded-right-4 text-12 lh-16 fw-500 uppercase bg-yellow-1 text-dark-1">
-                          Top Rated
-                        </div>
-                      </div>
-
-                    </div>
-
-                  </div>
-
-                  <div class="activityCard__content mt-10">
-                    <div class="text-14 lh-14 text-light-1 mb-5">6+ hours</div>
-
-                    <h4 class="activityCard__title lh-16 fw-500 text-dark-1 text-18">
-                      <span>South Coast Full Day Tour by Minibus from Reykjavik</span>
-                    </h4>
-
-                    <p class="text-light-1 text-14 lh-14 mt-5">Vaticano Prati, Rome</p>
-
-                    <div class="row justify-between items-center pt-10">
-                      <div class="col-auto">
-                        <div class="d-flex items-center">
-                          <div class="icon-star text-yellow-1 text-10 mr-5"></div>
-
-                          <div class="text-14 text-light-1">
-                            <span class="text-15 text-dark-1 fw-500">4.82</span>
-                            94 reviews
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="col-auto">
-                        <div class="text-14 text-light-1">
-                          From <span class="text-16 fw-500 text-dark-1">US$72</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-
-              </div>
-
-              <div class="col-lg-4 col-sm-6">
-
-                <a href="activity-single.html" class="activityCard -type-1 rounded-4 ">
-                  <div class="activityCard__image">
-
-                    <div class="cardImage ratio ratio-1:1">
-                      <div class="cardImage__content">
-
-                        <img class="rounded-4 col-12" src="img/lists/activity/2/5.png" alt="image">
-
-
-                      </div>
-
-                      <div class="cardImage__wishlist">
-                        <button class="button -blue-1 bg-white size-30 rounded-full shadow-2">
-                          <i class="icon-heart text-12"></i>
-                        </button>
-                      </div>
-
-
-                    </div>
-
-                  </div>
-
-                  <div class="activityCard__content mt-10">
-                    <div class="text-14 lh-14 text-light-1 mb-5">6+ hours</div>
-
-                    <h4 class="activityCard__title lh-16 fw-500 text-dark-1 text-18">
-                      <span>South Coast Full Day Tour by Minibus from Reykjavik</span>
-                    </h4>
-
-                    <p class="text-light-1 text-14 lh-14 mt-5">Vaticano Prati, Rome</p>
-
-                    <div class="row justify-between items-center pt-10">
-                      <div class="col-auto">
-                        <div class="d-flex items-center">
-                          <div class="icon-star text-yellow-1 text-10 mr-5"></div>
-
-                          <div class="text-14 text-light-1">
-                            <span class="text-15 text-dark-1 fw-500">4.82</span>
-                            94 reviews
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="col-auto">
-                        <div class="text-14 text-light-1">
-                          From <span class="text-16 fw-500 text-dark-1">US$72</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-
-              </div>
-
-              <div class="col-lg-4 col-sm-6">
-
-                <a href="activity-single.html" class="activityCard -type-1 rounded-4 ">
-                  <div class="activityCard__image">
-
-                    <div class="cardImage ratio ratio-1:1">
-                      <div class="cardImage__content">
-
-                        <img class="rounded-4 col-12" src="img/lists/activity/2/6.png" alt="image">
-
-
-                      </div>
-
-                      <div class="cardImage__wishlist">
-                        <button class="button -blue-1 bg-white size-30 rounded-full shadow-2">
-                          <i class="icon-heart text-12"></i>
-                        </button>
-                      </div>
-
-
-                    </div>
-
-                  </div>
-
-                  <div class="activityCard__content mt-10">
-                    <div class="text-14 lh-14 text-light-1 mb-5">6+ hours</div>
-
-                    <h4 class="activityCard__title lh-16 fw-500 text-dark-1 text-18">
-                      <span>South Coast Full Day Tour by Minibus from Reykjavik</span>
-                    </h4>
-
-                    <p class="text-light-1 text-14 lh-14 mt-5">Vaticano Prati, Rome</p>
-
-                    <div class="row justify-between items-center pt-10">
-                      <div class="col-auto">
-                        <div class="d-flex items-center">
-                          <div class="icon-star text-yellow-1 text-10 mr-5"></div>
-
-                          <div class="text-14 text-light-1">
-                            <span class="text-15 text-dark-1 fw-500">4.82</span>
-                            94 reviews
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="col-auto">
-                        <div class="text-14 text-light-1">
-                          From <span class="text-16 fw-500 text-dark-1">US$72</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-
-              </div>
-
-              <div class="col-lg-4 col-sm-6">
-
-                <a href="activity-single.html" class="activityCard -type-1 rounded-4 ">
-                  <div class="activityCard__image">
-
-                    <div class="cardImage ratio ratio-1:1">
-                      <div class="cardImage__content">
-
-                        <img class="rounded-4 col-12" src="img/lists/activity/2/7.png" alt="image">
-
-
-                      </div>
-
-                      <div class="cardImage__wishlist">
-                        <button class="button -blue-1 bg-white size-30 rounded-full shadow-2">
-                          <i class="icon-heart text-12"></i>
-                        </button>
-                      </div>
-
-
-                    </div>
-
-                  </div>
-
-                  <div class="activityCard__content mt-10">
-                    <div class="text-14 lh-14 text-light-1 mb-5">6+ hours</div>
-
-                    <h4 class="activityCard__title lh-16 fw-500 text-dark-1 text-18">
-                      <span>South Coast Full Day Tour by Minibus from Reykjavik</span>
-                    </h4>
-
-                    <p class="text-light-1 text-14 lh-14 mt-5">Vaticano Prati, Rome</p>
-
-                    <div class="row justify-between items-center pt-10">
-                      <div class="col-auto">
-                        <div class="d-flex items-center">
-                          <div class="icon-star text-yellow-1 text-10 mr-5"></div>
-
-                          <div class="text-14 text-light-1">
-                            <span class="text-15 text-dark-1 fw-500">4.82</span>
-                            94 reviews
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="col-auto">
-                        <div class="text-14 text-light-1">
-                          From <span class="text-16 fw-500 text-dark-1">US$72</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-
-              </div>
-
-              <div class="col-lg-4 col-sm-6">
-
-                <a href="activity-single.html" class="activityCard -type-1 rounded-4 ">
-                  <div class="activityCard__image">
-
-                    <div class="cardImage ratio ratio-1:1">
-                      <div class="cardImage__content">
-
-                        <img class="rounded-4 col-12" src="img/lists/activity/2/8.png" alt="image">
-
-
-                      </div>
-
-                      <div class="cardImage__wishlist">
-                        <button class="button -blue-1 bg-white size-30 rounded-full shadow-2">
-                          <i class="icon-heart text-12"></i>
-                        </button>
-                      </div>
-
-
-                    </div>
-
-                  </div>
-
-                  <div class="activityCard__content mt-10">
-                    <div class="text-14 lh-14 text-light-1 mb-5">6+ hours</div>
-
-                    <h4 class="activityCard__title lh-16 fw-500 text-dark-1 text-18">
-                      <span>South Coast Full Day Tour by Minibus from Reykjavik</span>
-                    </h4>
-
-                    <p class="text-light-1 text-14 lh-14 mt-5">Vaticano Prati, Rome</p>
-
-                    <div class="row justify-between items-center pt-10">
-                      <div class="col-auto">
-                        <div class="d-flex items-center">
-                          <div class="icon-star text-yellow-1 text-10 mr-5"></div>
-
-                          <div class="text-14 text-light-1">
-                            <span class="text-15 text-dark-1 fw-500">4.82</span>
-                            94 reviews
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="col-auto">
-                        <div class="text-14 text-light-1">
-                          From <span class="text-16 fw-500 text-dark-1">US$72</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-
-              </div>
-
-              <div class="col-lg-4 col-sm-6">
-
-                <a href="activity-single.html" class="activityCard -type-1 rounded-4 ">
-                  <div class="activityCard__image">
-
-                    <div class="cardImage ratio ratio-1:1">
-                      <div class="cardImage__content">
-
-                        <img class="rounded-4 col-12" src="img/lists/activity/2/9.png" alt="image">
-
-
-                      </div>
-
-                      <div class="cardImage__wishlist">
-                        <button class="button -blue-1 bg-white size-30 rounded-full shadow-2">
-                          <i class="icon-heart text-12"></i>
-                        </button>
-                      </div>
-
-
-                    </div>
-
-                  </div>
-
-                  <div class="activityCard__content mt-10">
-                    <div class="text-14 lh-14 text-light-1 mb-5">6+ hours</div>
-
-                    <h4 class="activityCard__title lh-16 fw-500 text-dark-1 text-18">
-                      <span>South Coast Full Day Tour by Minibus from Reykjavik</span>
-                    </h4>
-
-                    <p class="text-light-1 text-14 lh-14 mt-5">Vaticano Prati, Rome</p>
-
-                    <div class="row justify-between items-center pt-10">
-                      <div class="col-auto">
-                        <div class="d-flex items-center">
-                          <div class="icon-star text-yellow-1 text-10 mr-5"></div>
-
-                          <div class="text-14 text-light-1">
-                            <span class="text-15 text-dark-1 fw-500">4.82</span>
-                            94 reviews
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="col-auto">
-                        <div class="text-14 text-light-1">
-                          From <span class="text-16 fw-500 text-dark-1">US$72</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-
-              </div>
-
             </div>
 
             <div class="border-top-light mt-30 pt-30">
@@ -1325,8 +373,10 @@ declare const LazyLoad: any;
 </script>
 
 <script setup lang="ts">
+import ActivityType from './ActivityType.vue';
 import TheFooter from '../../Components/TheFooter.vue';
 import TheHeader from '../../Components/TheHeader.vue';
+import Price from '../Destination/Price.vue';
 import {
   animInit,
   animateElement,

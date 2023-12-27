@@ -2,10 +2,9 @@
   <footer class="footer -type-2 bg-dark-2 text-white">
     <div class="container">
       <div class="pt-60 pb-60">
+        <h2>MADURA INDAH WISATA</h2>
         <div class="row y-gap-40 justify-between xl:justify-start">
           <div class="col-xl-4 col-lg-6">
-            <img src="/img/general/logo-light.svg" alt="image">
-
             <div class="row y-gap-30 justify-between pt-30">
               <div class="col-sm-6">
                 <div class="text-14">Toll Free Customer Care</div>
@@ -58,52 +57,36 @@
 
           <div class="col-lg-6">
             <div class="row y-gap-30">
-              <div class="col-12">
-                <h5 class="text-16 fw-500 mb-15">Get Updates & More</h5>
-
-                <div class="single-field relative d-flex justify-end items-center pb-30">
-                  <input class="bg-white rounded-8" type="email" placeholder="Your Email">
-                  <button class="absolute px-20 h-full text-15 fw-500 underline text-dark-1">Subscribe</button>
+              <div class="col-lg-4 col-sm-6">
+                <h5 class="text-16 fw-500 mb-30">Wisata</h5>
+                <div class="d-flex y-gap-5 flex-column">
+                  <a href="#">Hotel</a>
+                  <a href="#">Flight</a>
+                  <a href="#">Car Rental</a>
+                  <a href="#">Cruise</a>
                 </div>
               </div>
 
               <div class="col-lg-4 col-sm-6">
-                <h5 class="text-16 fw-500 mb-30">Company</h5>
+                <h5 class="text-16 fw-500 mb-30">Online Platform</h5>
+                <div class="d-flex y-gap-5 flex-column">
+                  <a href="#">Hotel Booking</a>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-sm-6">
+                <h5 class="text-16 fw-500 mb-30">Lainnya</h5>
                 <div class="d-flex y-gap-5 flex-column">
                   <a href="#">About Us</a>
-                  <a href="#">Careers</a>
-                  <a href="#">Blog</a>
-                  <a href="#">Press</a>
-                  <a href="#">Gift Cards</a>
-                  <a href="#">Magazine</a>
+                  <a href="#">Destination</a>
                 </div>
               </div>
-
-              <div class="col-lg-4 col-sm-6">
-                <h5 class="text-16 fw-500 mb-30">Support</h5>
-                <div class="d-flex y-gap-5 flex-column">
-                  <a href="#">Contact</a>
-                  <a href="#">Legal Notice</a>
-                  <a href="#">Privacy Policy</a>
-                  <a href="#">Terms and Conditions</a>
-                  <a href="#">Sitemap</a>
-                </div>
-              </div>
-
-              <div class="col-lg-4 col-sm-6">
-                <h5 class="text-16 fw-500 mb-30">Other Services</h5>
-                <div class="d-flex y-gap-5 flex-column">
-                  <a href="#">Car hire</a>
-                  <a href="#">Activity Finder</a>
-                  <a href="#">Tour List</a>
-                  <a href="#">Flight finder</a>
-                  <a href="#">Cruise Ticket</a>
-                  <a href="#">Holiday Rental</a>
-                  <a href="#">Travel Agents</a>
-                </div>
+              <div class="col-12 text-end">
+               <img src="/img/wonderfull.png" class="mx-auto" alt="W3Schools.com" width="300">
               </div>
             </div>
           </div>
+
         </div>
       </div>
 
@@ -113,37 +96,12 @@
             <div class="row x-gap-30 y-gap-10">
               <div class="col-auto">
                 <div class="d-flex items-center">
-                  © 2022 GoTrip LLC All rights reserved.
-                </div>
-              </div>
-
-              <div class="col-auto">
-                <div class="d-flex x-gap-15">
-                  <a href="#">Privacy</a>
-                  <a href="#">Terms</a>
-                  <a href="#">Site Map</a>
+                  © 2023 Madura Indah Wisata. All rights reserved.
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="col-auto">
-            <div class="row y-gap-10 items-center">
-              <div class="col-auto">
-                <div class="d-flex items-center">
-                  <button class="d-flex items-center text-14 fw-500 text-white mr-10">
-                    <i class="icon-globe text-16 mr-10"></i>
-                    <span class="underline">English (US)</span>
-                  </button>
-
-                  <button class="d-flex items-center text-14 fw-500 text-white">
-                    <i class="icon-usd text-16 mr-10"></i>
-                    <span class="underline">USD</span>
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </div>

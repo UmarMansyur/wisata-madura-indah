@@ -1,3 +1,5 @@
+
+
 <template>
   <header class="header  js-header" data-x="header" data-x-toggle="is-menu-opened">
     <div data-anim="fade" class="header__container container">
@@ -5,10 +7,10 @@
 
         <div class="col-auto">
           <div class="d-flex items-center">
-            <a href="index.html" class="header-logo mr-20" data-x="header-logo" data-x-toggle="is-logo-dark">
-              <img src="/img/general/logo.svg" alt="logo icon">
-              <span class="text-white">Madura Indah Wisata</span>
-            </a>
+            <Link href="/" class="header-logo mr-20" data-x="header-logo" data-x-toggle="is-logo-dark">
+            <img src="/img/general/logo.svg" alt="logo icon">
+            <span class="text-white">Madura Indah Wisata</span>
+            </Link>
           </div>
         </div>
 
@@ -26,38 +28,25 @@
                   <ul class="menu__nav text-white -is-active">
 
                     <li class="menu-item-has-children">
-                      <a data-barba href="#">
+                      <!-- <a data-barba href="#">
                         <span class="mr-10">Home</span>
                         <i class="icon icon-chevron-sm-down"></i>
-                      </a>
+                      </a> -->
 
                       <ul class="subnav">
-                        <li class="subnav__backBtn js-nav-list-back">
+                        <!-- <li class="subnav__backBtn js-nav-list-back">
                           <a href="#"><i class="icon icon-chevron-sm-down"></i> Home</a>
-                        </li>
+                        </li> -->
 
-                        <li><a href="index.html">Home 1</a></li>
-
-                        <li><a href="home-2.html">Home 2</a></li>
-
-                        <li><a href="home-3.html">Home 3</a></li>
-
-                        <li><a href="home-4.html">Home 4</a></li>
-
-                        <li><a href="home-5.html">Home 5</a></li>
-
-                        <li><a href="home-6.html">Home 6</a></li>
-
-                        <li><a href="home-7.html">Home 7</a></li>
-
-                        <li><a href="home-8.html">Home 8</a></li>
-
-                        <li><a href="home-9.html">Home 9</a></li>
-
-                        <li><a href="home-10.html">Home 10</a></li>
+                        <li><a href="/">Home 1</a></li>
 
                       </ul>
 
+                    </li>
+                    <li class="menu-item-has-children">
+                      <a data-barba href="#">
+                        <span class="mr-10">Home</span>
+                      </a>
                     </li>
                     <li class="menu-item-has-children">
                       <a data-barba href="#">
@@ -98,3 +87,17 @@
     </div>
   </header>
 </template>
+
+<script setup lang="ts">
+import { Link } from '@inertiajs/vue3';
+</script>
+
+
+<style lang="css">
+.menu-item-has-children:hover {
+  color: black;
+}
+.menu-item-has-children:hover>a {
+  color: lightblue;
+}
+</style>
